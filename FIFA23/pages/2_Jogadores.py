@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 
-df_data = pd.read_csv("datasets/CLEAN_FIFA23_official_data.csv", index_col=0)
+df_data = pd.read_csv("FIFA23/datasets/CLEAN_FIFA23_official_data.csv", index_col=0)
 df_data = df_data[df_data['Contract Valid Until'] >= datetime.today().year]
 
 clubes = df_data['Club'].value_counts().index
